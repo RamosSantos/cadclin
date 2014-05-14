@@ -1,0 +1,77 @@
+<div class="container jumbotron">
+  <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome aluno:</strong>
+  <%= @cadastro.nome_aluno %>
+</p>
+
+<p>
+  <strong>Rm:</strong>
+  <%= @cadastro.rm %>
+</p>
+
+<p>
+  <strong>Ra:</strong>
+  <%= @cadastro.ra %>
+</p>
+
+<p>
+  <strong>Nome pai:</strong>
+  <%= @cadastro.nome_pai %>
+</p>
+
+<p>
+  <strong>Cpf pai:</strong>
+  <%= @cadastro.cpf_pai %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @cadastro.rg %>
+</p>
+
+<p>
+  <strong>Nome mae:</strong>
+  <%= @cadastro.nome_mae %>
+</p>
+
+<p>
+  <strong>Cpf mae:</strong>
+  <%= @cadastro.cpf_mae %>
+</p>
+
+<p>
+  <strong>Rg mae:</strong>
+  <%= @cadastro.rg_mae %>
+</p>
+
+<p>
+  <strong>Telefone residencial:</strong>
+  <%= @cadastro.telefone_residencial %>
+</p>
+
+<p>
+  <strong>Telefone celular:</strong>
+  <%= @cadastro.telefone_celular %>
+</p>
+
+<p>
+  <strong>Telefone recado:</strong>
+  <%= @cadastro.telefone_recado %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @cadastro.end %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @cadastro.complemento %>
+</p>
+
+<%= link_to 'Editar', edit_cadastro_path(@cadastro) %> |
+<%= link_to 'Voltar', cadastros_path %>
+
+</div>

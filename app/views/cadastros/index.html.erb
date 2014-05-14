@@ -1,0 +1,60 @@
+<div>
+    <div class="panel panel-primary">
+            <div class="panel-heading"><h2>Cadastrados</h2></div>
+            <div class="panel-body">
+                <table border="0" width="90%" class="table table-striped" id="cd">
+                     <tr>
+                <td>Nome Aluno</td>
+                <td>R.A</td>
+                <td>R.M</td>
+                <td>Nome Pai</td>
+                <td>CPF</td>
+                <td>RG</td> 
+                <td>Nome Mãe</td> 
+                <td>CPF</td>
+                <td>RG</td>   
+                <td>Residencial</td>
+                <td>Celular</td>
+                <td>Recado</td> 
+                <td>End.</td>
+                <td>Comp.</td>  
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+      <tbody>
+        <% @cadastros.each do |cadastro| %>
+          <tr>
+            <td><%= cadastro.nome_aluno %></td>
+            <td><%= cadastro.rm %></td>
+            <td><%= cadastro.ra %></td>
+            <td><%= cadastro.nome_pai %></td>
+            <td><%= cadastro.cpf_pai %></td>
+            <td><%= cadastro.rg %></td>
+            <td><%= cadastro.nome_mae %></td>
+            <td><%= cadastro.cpf_mae %></td>
+            <td><%= cadastro.rg_mae %></td>
+            <td><%= cadastro.telefone_residencial %></td>
+            <td><%= cadastro.telefone_celular %></td>
+            <td><%= cadastro.telefone_recado %></td>
+            <td><%= cadastro.end %></td>
+            <td><%= cadastro.complemento %></td>
+            <td><strong><%= link_to 'Mostrar', cadastro %></strong></td>
+            <td><strong><%= link_to 'Editar', edit_cadastro_path(cadastro) %></strong></td>
+            <td><strong><%= link_to 'Deletar', cadastro, method: :delete, data: { confirm: 'Deseja excluir o cadastro?' } %></strong> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+            </div>
+                 
+    </div>
+    
+        
+</div>
+ 
+
+
+

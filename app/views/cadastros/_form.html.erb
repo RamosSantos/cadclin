@@ -1,0 +1,62 @@
+<%= form_for(@cadastro) do |f| %>
+  <% if @cadastro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cadastro.errors.count, "error") %> prohibited this cadastro from being saved:</h2>
+
+      <ul>
+      <% @cadastro.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table border="0" width="100%" class="table table-striped" >
+    
+<tr>
+
+  <td><%= f.label :nome_aluno %></td>
+  <td><%= f.text_field :nome_aluno %></td>
+  <td><%= f.label :rm %></td>
+  <td><%= f.text_field :rm %></td>
+  <td><%= f.label :ra %></td>
+  <td><%= f.text_field :ra %></td>
+</tr>
+<tr>
+    <td><%= f.label :nome_pai %></td>
+    <td> <%= f.text_field :nome_pai %></td>
+    <td><%= f.label :cpf %></td>
+    <td> <%= f.text_field :cpf_pai %></td>
+    <td><%= f.label :rg_%></td>
+    <td><%= f.text_field :rg %></td>
+</tr>
+<tr>
+    <td><%= f.label :nome_mãe %></td>
+    <td> <%= f.text_field :nome_mae %></td>
+    <td><%= f.label :cpf %></td>
+    <td> <%= f.text_field :cpf_mae %></td>
+    <td><%= f.label :rg%></td>
+    <td><%= f.text_field :rg_mae %></td>
+</tr>
+<tr>
+    <td><%= f.label :telefone_residencial %></td>
+    <td> <%= f.text_field :telefone_residencial %></td>
+    <td><%= f.label :telefone_celular %></td>
+    <td> <%= f.text_field :telefone_celular %></td>
+    <td><%= f.label :telefone_recado%></td>
+    <td><%= f.text_field :telefone_recado %></td>
+</tr>
+<tr>
+  <td><%= f.label :endereço %></td>
+  <td> <%= f.text_field :end %></td>
+  <td><%= f.label :complemento %></td>
+  <td> <%= f.text_field :complemento %></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</table><br>
+<div class="actions">
+        <button href="index.html" type="submit" class="btn btn-primary">Salvar</button>
+       
+  </div>
+<% end %>

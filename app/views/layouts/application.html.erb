@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CadClin</title>
+  <link rel="stylesheet" href="app\assets\stylesheets\bootstrap.css">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	 <nav class="navbar navbar-default navbar-fixed-top" >
+     	
+          <a class="navbar-brand" href="/cadastros/home">CadClin 1.0</a>
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/cadastros/new">Cadastrar</a></li>
+            <li class=""><a href="/cadastros">Cadastrados</a></li>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+               <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn btn-default">Ir</button>
+              </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	
+		<%= yield %>
+	
+	
+
+
+
+</body>
+</html>

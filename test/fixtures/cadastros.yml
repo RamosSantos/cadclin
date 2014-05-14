@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_aluno: MyString
+  rm: MyString
+  ra: MyString
+  nome_pai: MyString
+  cpf_pai: MyString
+  rg: MyString
+  nome_mae: MyString
+  cpf_mae: MyString
+  rg_mae: MyString
+  telefone_residencial: MyString
+  telefone_celular: MyString
+  telefone_recado: MyString
+  end: MyString
+  complemento: MyString
+
+two:
+  nome_aluno: MyString
+  rm: MyString
+  ra: MyString
+  nome_pai: MyString
+  cpf_pai: MyString
+  rg: MyString
+  nome_mae: MyString
+  cpf_mae: MyString
+  rg_mae: MyString
+  telefone_residencial: MyString
+  telefone_celular: MyString
+  telefone_recado: MyString
+  end: MyString
+  complemento: MyString
